@@ -6,6 +6,7 @@ export default function PaymentVerificationForm({ userData }) {
   const [bankChecked, setBankChecked] = useState(false);
 
   const handleSubmit = async (e) => {
+    console.log("test");
     e.preventDefault();
 
     const paymentData = {
