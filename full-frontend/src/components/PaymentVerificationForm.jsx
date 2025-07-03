@@ -20,7 +20,7 @@ export default function PaymentVerificationForm({ userData }) {
     const fullData = { ...userData, ...paymentData };
 
     try {
-      const res = await axios.post("/form", fullData);
+      const res = await axios.post("https://back-fafv.onrender.com/api/form",fulldata)
       console.log(res.data);
       alert("✔ Données enregistrées avec succès !");
     } catch (err) {
